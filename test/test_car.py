@@ -16,7 +16,7 @@ class TestCalliope(unittest.TestCase):
         current_mileage = 0
         last_service_mileage = 0
 
-        car = carFactory.create_calliopeCalliope(last_service_date, current_mileage, last_service_mileage)
+        car = carFactory.create_calliope(last_service_date, current_mileage, last_service_mileage)
         self.assertTrue(car.needs_service())
 
     def test_battery_should_not_be_serviced(self):
